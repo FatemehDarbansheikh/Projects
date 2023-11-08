@@ -13,7 +13,6 @@ void han(int x, char a, char temp, char b)
 		cout << " number " << x << " from " << a << " to " << b << endl;
 		han(x - 1, temp, a, b);
 	}
-
 }
 void main()
 {
@@ -22,5 +21,4 @@ void main()
 	cin >> n;
 	cin >> A >> B >> C;
 	han(n, A, B, C);
-
 }
