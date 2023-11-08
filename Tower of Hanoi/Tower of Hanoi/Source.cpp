@@ -3,7 +3,6 @@ using namespace std;
 
 void han(int x, char a, char temp, char b)
 {
-	int count = 0;
 	if (x == 1)
 		cout << " number " << x << " from " << a << " to " << b << endl;
 
