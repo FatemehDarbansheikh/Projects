@@ -14,6 +14,13 @@ public:
 		array = new int[size];
 	}
 
-	
+	void Insert(int object, int index)
+	{
+		if (index < size && index >= 0)
+			array[index] = object;
+		else
+			return;
+	}
+
 
 };
