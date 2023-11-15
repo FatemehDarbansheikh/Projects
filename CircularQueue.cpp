@@ -20,4 +20,12 @@ public:
 		else
 			return false;
 	}
+
+	void Enqueue(int object)
+	{
+		if (isFull() == true)
+			return;
+		rear = (rear + 1) % size;
+		queue[rear] = object;
+	}
 };
