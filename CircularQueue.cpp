@@ -28,4 +28,12 @@ public:
 		rear = (rear + 1) % size;
 		queue[rear] = object;
 	}
+
+	int Peek()
+	{
+		if (isEmpty() == true)
+			return;
+		else
+			return queue[front];
+	}
 };
