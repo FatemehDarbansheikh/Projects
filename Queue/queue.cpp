@@ -15,5 +15,11 @@ public:
 		front, rear = -1;
 	}
 
-	
+	bool isEmpty()
+	{
+		if (front == rear)
+			return true;
+		else
+			return false;
+	}
 };
