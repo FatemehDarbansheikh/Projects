@@ -9,9 +9,15 @@ public:
 	{
 		size = n;
 		queue = new int[size];
-		front, rear = -1;
+		front, rear = 0;
 
 	}
 
-
+	bool isFull()
+	{
+		if (front == (rear + 1) % size)
+			return true;
+		else
+			return false;
+	}
 };
