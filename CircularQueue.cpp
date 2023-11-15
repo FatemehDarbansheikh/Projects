@@ -1,3 +1,6 @@
+#include<iostream>
+using namespace std;
+
 class CircularQueue
 {
 private:
@@ -7,16 +10,23 @@ private:
 public:
 	CircularQueue(int n)
 	{
-		size = n;
+		size = n+1;
 		queue = new int[size];
 		front, rear = 0;
-
 	}
 
 	bool isFull()
 	{
 		if (front == (rear + 1) % size)
 			return true;
+		else
+			return false;
+	}
+
+	bool isEmpty()
+	{
+		if (front == rear)
+			return true
 		else
 			return false;
 	}
@@ -32,7 +42,7 @@ public:
 	int Peek()
 	{
 		if (isEmpty() == true)
-			return;
+			return -1;
 		else
 			return queue[front];
 	}
