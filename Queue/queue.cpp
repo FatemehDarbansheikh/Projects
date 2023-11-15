@@ -22,4 +22,13 @@ public:
 		else
 			return false;
 	}
+
+	int Dequeue()
+	{
+		if (isEmpty() == true)
+			return;
+		return queue[++front];
+
+	}
+
 };
