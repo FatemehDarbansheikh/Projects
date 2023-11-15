@@ -31,4 +31,18 @@ public:
 
 	}
 
+	void ReverseQueue()
+	{
+		int temp;
+		int count = 0;
+
+		for (int i = 0; i <(size / 2); i++)
+		{
+			temp = queue[i];
+			queue[i] = queue[size - (i + 1)];
+			queue[size - (i + 1)] = temp;
+		}
+		for (int i = 0; i < size; i++)
+			cout << queue[i];
+	}
 };
