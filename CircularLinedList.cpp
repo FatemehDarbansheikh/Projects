@@ -224,7 +224,7 @@ public:
 	
 	int SizeOfList()
 	{
-		int size;
+		int size = 0;
 		if (head == NULL)
 			return size;
 		Node *temp = head;
